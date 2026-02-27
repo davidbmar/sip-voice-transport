@@ -64,9 +64,18 @@ async for audio_chunk in transport.receive_audio():
 
 ### 1. Install
 
+Requires **Python 3.11+**. Check your version with `python3 --version`.
+
 ```bash
+# Create a virtual environment (recommended)
+python3 -m venv .venv
+source .venv/bin/activate
+
+# Install the package
 pip install -e ".[cli,dev]"
 ```
+
+> **Note:** macOS ships with Python 3.9 which is too old. Use `brew install python@3.13` or similar to get a supported version.
 
 ### 2. Create a DID config
 
